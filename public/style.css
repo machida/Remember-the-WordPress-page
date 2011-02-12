@@ -287,12 +287,17 @@ a {
 	color: #3D6072;
 }
 #footer .github a {
-	background-image: url(images/github.png);
-	text-indent: -9999px;
 	display: block;
 	height: 125px;
 	width: 125px;
 	position: absolute;
 	left: 0px;
 	top: 0px;
+}
+#footer .github a {
+	background-image: url(images/github.png);
+	text-indent: -9999px;
+	display: block;
+	height: 125px;
+	width: 125px;
 }
