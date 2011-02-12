@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+body {
+	background-image:url(images/body.gif);
+	letter-spacing: 0.06em;
+	width: 780px;
+	margin-right: auto;
+	margin-left: auto;
+	}
+#header {
+	height: 240px;
+	background-image: url(images/header.jpg);
+	margin-top: 20px;
+	background-repeat: no-repeat;
+}
+#header .title {
+	text-align: center;
+	padding-top: 30px;
+	float: right;
+	width: 580px;
+}
+#header .title h1 {
+	display: block;
+	height: 34px;
+	background-image: url(images/h1.gif);
+	text-align: left;
+	text-indent: -9999px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+}
+#header .title h2 {
+	font-size: 18px;
+	font-family: 'Dancing Script', serif;
+	color: #3D6072;
+	display: block;
+	margin-bottom: 20px;
+}
+#header .title .button a {
+	background-image: url(images/header_button.jpg);
+	display: block;
+	height: 40px;
+	width: 270px;
+	line-height: 40px;
+	text-decoration: none;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: 'Copse', serif;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.button a:link,
+.button a:visited {
+	background-position: left top;
+	color:#46596b;
+	text-shadow:#eee 1px 1px 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.button a:hover,
+.button a:active {
+	background-position: left bottom;
+	text-shadow:#fff 1px 1px 0px;
+	padding-top: 17px;
+	padding-bottom: 13px;
+	color:#496d91;
+}
+.button a:hover span,
+.button a:active span {
+	display: block;
+	padding-top: 1px;
+}
+.copy {
+	text-align: center;
+	font-size: 12px;
+	display: block;
+	font-family: 'Droid Serif', serif;
+	color:#3D6072;
+}
+
+#header .copy {
+	float: left;
+	width: 200px;
+	padding-top: 200px;
+}
+#container {
+	margin-top: 30px;
+	padding-bottom: 10px;
+}
+#container h2,
+#footer h2 {
+	font-family: 'Neucha', serif;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+}
+#about {
+	background-image: url(images/about.gif);
+	float: left;
+	width: 450px;
+	color: #EDEDED;
+	padding-top: 25px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow:inset 1px 1px 0px #000;
+	-webkit-box-shadow:inset 1px 1px 2px #515e65;
+	-moz-box-shadow:inset 2px 2px 0px #000;
+	-o-box-shadow:inset 2px 2px 0px #000;
+}
+#about h2 {
+	color: #EDEDED;
+	font-size: 28px;
+	text-shadow:#51626b -1px -1px 0px;
+	padding-bottom: 2px;
+	display: block;
+	margin-bottom: 0.8em;
+	background-image: url(images/h2.gif);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+}
+#about p {
+	text-shadow:#51626b -1px -1px 0px;
+	font-size: 13px;
+}
+#container p {
+	line-height: 1.8;
+	margin-bottom: 1.8em;
+	font-family: "Hiragino Maru Gothic Pro" ,"HG丸ゴシックM-PRO" ,verdana ,arial ,sans-serif;
+}
+#footer {
+	color: #38454B;
+	clear: both;
+	background-image: url(images/usage_li.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+#footer p {
+	text-shadow:#adc3ce 1px 1px 0px;
+	font-size: 12px;
+	line-height:1.7;
+}
+#usage {
+	float: right;
+	width: 250px;
+	font-size: 12px;
+	color: #37424A;
+}
+#usage p {
+	line-height: 1.5;
+}
+#usage h2 {
+	font-size: 16px;
+	display: block;
+	background-image:url(images/usage_h2.gif);
+	height: 25px;
+	width: 94px;
+	padding-bottom: 16px;
+	padding-top: 9px;
+	line-height: 25px;
+	text-align: center;
+	color: #EDEDED;
+	margin-left: -10px;
+	margin-bottom: 15px;
+}
+#usage ol li {
+	display: block;
+	margin-bottom: 15px;
+	background-image: url(images/usage_li.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	padding-bottom: 15px;
+}
+#usage ol li:last-child {
+	background-image: none
+}
+#usage ol li p {
+	margin-bottom: 0px;
+}
+#author {
+	float: left;
+	width: 320px;
+}
+#footer .face {
+	float: left;
+	width: 50px;
+	margin-top: 5px;
+}
+#author .text {
+	float: left;
+	width: 225px;
+	padding-left: 15px;
+}
+#lisence .text {
+	float: left;
+	width: 365px;
+	padding-left: 15px;
+}
+#footer h3 {
+	font-size: 16px;
+	font-family: 'Copse', serif;
+	display:block;
+	line-height:1.5;
+	text-shadow:#adc3ce 1px 1px 0px;
+	padding-bottom: 10px;
+}
+#author .text h3 span {
+	font-size: 11px;
+	font-family: serif;
+	display:block;
+}
+#footer h2 {
+	font-size: 20px;
+	display: block;
+	margin-bottom: 15px;
+	text-shadow:#adc3ce 1px 1px 0px;
+}
+#footer img {
+	font-size: 20px;
+	display: block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+#footer .copy {
+	clear: both;
+	padding-top:50px;
+	font-family: 'Copse', serif;
+	font-size:12px;
+}
+#author .text ul li {
+	font-size: 12px;
+	line-height: 1.4;
+	display:block;
+	margin-bottom:5px;
+	text-shadow:#adc3ce 1px 1px 0px;
+}
+a {
+	color: #0a5782;
+}
+#lisence {
+	float: left;
+}
+#usage li p img {
+	float: right;
+	margin-bottom: 5px;
+	margin-left: 8px;
+}
+#header .title .repository {
+	font-size: 13px;
+	text-align: right;
+	display: block;
+	padding-top: 15px;
+	font-family: 'Copse', serif;
+	color: #3D6072;
+}
+#footer .github a {
+	background-image: url(images/github.png);
+	text-indent: -9999px;
+	display: block;
+	height: 125px;
+	width: 125px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
