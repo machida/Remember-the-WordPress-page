@@ -132,10 +132,10 @@ body {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-o-border-radius: 10px;
-	box-shadow:inset 1px 1px 0px #000;
+	box-shadow:inset 1px 1px 2px #515e65;
 	-webkit-box-shadow:inset 1px 1px 2px #515e65;
-	-moz-box-shadow:inset 2px 2px 0px #000;
-	-o-box-shadow:inset 2px 2px 0px #000;
+	-moz-box-shadow:inset 1px 1px 2px #515e65;
+	-o-box-shadow:inset 1px 1px 2px #515e65;
 }
 #about h2 {
 	color: #EDEDED;
